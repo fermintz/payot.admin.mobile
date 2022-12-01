@@ -41,10 +41,12 @@
       </dl>
       
     </div>
-    <div class="bottom">
-      <el-button class="cancle" @click="show = false">취소</el-button>
-      <el-button class="confirm" @click="show = false">확인</el-button>
-    </div>
+    <template #footer>
+      <div class="bottom">
+        <el-button class="cancle" @click="show = false">취소</el-button>
+        <el-button class="confirm" @click="show = false">확인</el-button>
+      </div>
+    </template>
   </el-dialog>
 </template>
 

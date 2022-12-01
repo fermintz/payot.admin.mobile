@@ -24,6 +24,9 @@
     </div>
     <div class="divider"></div>
     <div class="list">
+      <div class="no-data">
+        등록된 데이터가 없습니다.
+      </div>
       <draggable
         :list="product"
         :disabled="false"
@@ -68,6 +71,7 @@
                     <dd>30분</dd>
                   </dl>
                 </div>
+                <p>상품에 대한 설명글 자리 -없으면, 삭제</p>
               </div>  
             </div>
             <div class="bottom">
@@ -230,6 +234,8 @@ const checkMove = (e) => {
       position: relative;
       align-items: center;
 
+      
+
       .number{
         display:flex;
         align-items: center;
@@ -251,8 +257,18 @@ const checkMove = (e) => {
         }
       }
       .info{
+        flex:1;
         padding:12px;
         padding-left:0px;
+        p{
+          font-size:12px;
+          background:#f5f5f7;
+          width:100%;
+          border-radius:4px;
+          padding:8px;
+          margin-top:10px;
+          color:#797979;
+        }
         strong{
           font-size:14px;
           font-weight:500;
